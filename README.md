@@ -1,33 +1,58 @@
 # Linux Server Administration Project
 
-Учебный DevOps-проект по настройке Linux сервера.
+DevOps-проект по развертыванию и администрированию Linux сервера в Yandex Cloud.
 
-## Что реализовано
+## 📌 Описание
 
-- Развернут сервер в Yandex Cloud
-- Настроены пользователи и права доступа
-- Настроен SSH (отключен вход по паролю)
-- Настроен firewall (UFW)
-- Установлен и настроен Nginx
-- Проведен анализ логов (access.log, error.log)
-- Написан bash-скрипт мониторинга сервера
+В рамках проекта был развернут сервер на Ubuntu и настроена базовая инфраструктура:
+пользователи, безопасность, веб-сервер и мониторинг.
 
-## Стек
+## ⚙️ Что реализовано
+
+- Развертывание сервера в Yandex Cloud
+- Настройка пользователей и прав доступа (users, groups, sudo)
+- Настройка SSH (отключен вход по паролю)
+- Настройка firewall (UFW)
+- Установка и настройка Nginx
+- Анализ логов (access.log, error.log, journalctl)
+- Написание bash-скрипта мониторинга
+
+## 🛠️ Стек
 
 - Linux (Ubuntu)
 - Bash
 - Nginx
 - UFW
 - Systemd
+- Git
 
-## Скрипты
+## 📂 Структура проекта
 
-### server_monitor.sh
+linux-server-project/
+├── scripts/
+│ └── server_monitor.sh
+├── configs/
+├── docs/
+└── README.md
 
-Проверяет:
+## 🚀 Запуск скрипта
+
+```bash
+cd scripts
+chmod +x server_monitor.sh
+./server_monitor.sh```
+
+
+📊 Мониторинг
+
+Скрипт отображает:
 
 - uptime
-- disk usage
-- memory
-- CPU load
+- загрузку CPU
+- использование памяти
+- использование диска
 - статус nginx
+
+📎 Автор
+
+GitHub: https://github.com/azatone-art
